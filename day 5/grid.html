@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>2x2 Flex Grid</title>
+  <style>
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 400px; /* Adjust as needed */
+      height: 400px;
+      gap: 10px;
+    }
+
+    .box {
+      flex: 1 0 48%; /* Grow, shrink, basis */
+      height: 190px;
+      background-color: #4CAF50;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+  </div>
+
+</body>
+</html>
